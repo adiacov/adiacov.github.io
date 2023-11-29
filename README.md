@@ -1,1 +1,0 @@
-# adiacov.github.io
