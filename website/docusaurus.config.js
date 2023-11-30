@@ -9,7 +9,7 @@ import {themes as prismThemes} from 'prism-react-renderer';
 /** @type {import('@docusaurus/types').Config} */
 const config = {
   title: 'adiacov place',
-  tagline: 'Blog, code, ideas...',
+  tagline: 'A place to share code and programming ideas',
   favicon: 'img/favicon.ico',
 
   // Set the production url of your site here
