@@ -8,8 +8,8 @@ import {themes as prismThemes} from 'prism-react-renderer';
 
 /** @type {import('@docusaurus/types').Config} */
 const config = {
-  title: 'adiacov place',
-  tagline: 'A place to share code and programming ideas',
+  title: 'Byte Bazaar',
+  tagline: 'Byte Bazaar: Crafting Code, Creating Connections.',
   favicon: 'img/favicon.ico',
 
   // Set the production url of your site here
