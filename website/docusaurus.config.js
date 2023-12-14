@@ -41,12 +41,10 @@ const config = {
       /** @type {import('@docusaurus/preset-classic').Options} */
       ({
         docs: {
-          sidebarPath: './sidebars.js',
+            sidebarPath: './sidebars.js'
         },
         blog: {
           showReadingTime: true,
-          // Please change this to your repo.
-          // Remove this to remove the "edit this page" links.
         },
         theme: {
           customCss: './src/css/custom.css',
@@ -58,8 +56,6 @@ const config = {
   themeConfig:
     /** @type {import('@docusaurus/preset-classic').ThemeConfig} */
     ({
-      // Replace with your project's social card
-      image: 'img/docusaurus-social-card.jpg',
       navbar: {
         title: 'Home', // add a Home page link
         items: [
