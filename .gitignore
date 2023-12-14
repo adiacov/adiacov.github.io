@@ -262,3 +262,6 @@ dist
 .svelte-kit
 
 # End of https://www.toptal.com/developers/gitignore/api/intellij+all,git,gitbook,node
+
+# Custom
+work/
