@@ -10,10 +10,9 @@ layout: default
   <header class="post-header">
     <p class="date">{% include post-meta.html post=page content=content %}</p>
     <h1>{{ page.title }}</h1>
-    {% if page.description %}
-      <p class="description">{{ page.description }}</p>
-    {% endif %}
   </header>
+
+  {% include takeaways.html takeaways=page.takeaways %}
 
   <div class="content">
     {{ content }}

@@ -1,17 +1,13 @@
 ---
 layout: post
 title: "After Acceptance: What Comes Next in the AI Era?"
-description: "AI moved from excitement to fear to acceptance. The next phase is judgment."
 date: 2026-05-30
 series: "AI era at work"
+takeaways:
+  - AI is already part of everyday work.
+  - AI changes tasks before it replaces full roles.
+  - Judgment matters more than prompting.
 ---
-
-## Key takeaways
-
-- AI is already part of everyday work, not a future topic waiting for a strategy deck.
-- The useful way to think about AI is not “replacement” first, but which tasks it removes, changes, or makes cheaper.
-- The next important skill is judgment: knowing what is correct, useful, safe, and worth doing.
-- AI can make weak thinking look polished, so ownership of the result matters more, not less.
 
 AI is already in the workday. Not everywhere and not perfectly, but enough that pretending it is still “coming soon” feels strange.
 

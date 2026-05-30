@@ -107,6 +107,33 @@ blockquote {
   font-size: 0.9rem;
 }
 
+.takeaways {
+  margin: 20px 0 28px;
+}
+
+.takeaways h2 {
+  margin: 0 0 10px;
+  font-size: 1rem;
+  letter-spacing: 0;
+}
+
+.takeaways ul {
+  margin-bottom: 0;
+}
+
+.takeaways li {
+  margin-bottom: 6px;
+}
+
+.article-card .takeaways {
+  margin: 16px 0 0;
+  color: var(--muted);
+}
+
+.article-card .takeaways h2 {
+  display: none;
+}
+
 .top-nav {
   margin-bottom: 36px;
   font-size: 0.95rem;

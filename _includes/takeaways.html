@@ -1,0 +1,11 @@
+{% assign takeaways = include.takeaways %}
+{% if takeaways and takeaways.size > 0 %}
+  <section class="takeaways" aria-label="Key takeaways">
+    <h2>Key takeaways</h2>
+    <ul>
+      {% for takeaway in takeaways %}
+        <li>{{ takeaway }}</li>
+      {% endfor %}
+    </ul>
+  </section>
+{% endif %}
