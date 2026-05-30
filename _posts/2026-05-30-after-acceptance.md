@@ -13,9 +13,9 @@ AI is already in the workday. Not everywhere and not perfectly, but enough that 
 
 A developer uses it to understand code they did not write. Someone in marketing asks for ten rough campaign ideas. A recruiter cleans up a job description. A manager pastes meeting notes into a chat window and asks for a summary because the meeting was already too long the first time.
 
-This is not science fiction anymore. It is Tuesday. What interests me is not only the technology. It is the reaction around it, especially in IT.
+This is not a future scenario anymore. It is already part of normal work for many people. What interests me is not only the technology, but the way people reacted to it, especially in IT.
 
-## The fun part came first
+## First came excitement
 
 At the beginning, AI felt like a cheat code. You asked for a function and got one. You asked it to explain an error and it gave you something better than the first five search results. You asked for a test case, a SQL query, a regex, or a release note, and it gave you a starting point before you had time to open another tab.
 
@@ -25,7 +25,7 @@ That happened fast. Developers used it as a faster rubber duck. Product people u
 
 The excitement made sense. Then the uncomfortable question showed up: if this thing can do part of my work, what exactly is my work?
 
-## Then came the nervous part
+## Then came fear
 
 The fear was not irrational. Some people talked about it badly, but the concern itself was real.
 
@@ -39,7 +39,7 @@ Writing a first draft of a status update. Turning rough notes into something rea
 
 AI is good at reducing that layer. That is why it feels both helpful and threatening.
 
-## Now it is becoming normal
+## Now comes acceptance
 
 We are probably past the magic phase. In many teams, AI is just another tab now. People still complain about it. They still catch it making things up. They still paste its output into Slack and ask, “Does this look right?” But they use it. That is the important part.
 
@@ -49,7 +49,7 @@ Outside IT, the change may be bigger. People who never thought of themselves as 
 
 This is the acceptance phase. Not excitement. Not panic. More like: yes, this is part of work now. Use it, but do not be stupid about it.
 
-## The next skill is judgment
+## What comes next?
 
 The easy answer is to say the next skill is prompting. I do not think that is the main thing.
 
@@ -65,7 +65,7 @@ That is where experience matters. Not because experienced people type faster. Th
 
 AI does not have that context unless someone brings it.
 
-## The trap is looking finished too early
+## Judgment, not prompting
 
 This is the part I worry about most: AI makes unfinished thinking look finished.
 
@@ -79,7 +79,7 @@ Ask it for a draft, then challenge the draft. Ask for options, then choose based
 
 If AI helps you write the report, it is still your report. If it helps you write the code, it is still your code. If it helps you make the decision, it is still your decision. The tool can assist. It cannot take responsibility.
 
-## Where this leaves us
+## A practical conclusion
 
 The first reaction was excitement. The second was fear. Now we are in acceptance. What comes next is maturity.
 
