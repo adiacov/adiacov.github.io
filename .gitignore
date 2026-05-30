@@ -4,3 +4,7 @@
 .jekyll-metadata
 _site/
 .idea/
+
+
+.pi/
+sessions/
