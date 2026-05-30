@@ -12,7 +12,7 @@ title: Articles
   {% for post in site.posts %}
     <article class="article-card">
       <h2><a href="{{ post.url | relative_url }}">{{ post.title }}</a></h2>
-      <p class="date">{{ post.date | date: "%B %-d, %Y" }}</p>
+      <p class="date">{% include post-meta.html post=post %}</p>
       {% if post.description %}
         <p>{{ post.description }}</p>
       {% endif %}
