@@ -6,169 +6,89 @@ date: 2026-05-30
 series: "AI era at work"
 ---
 
-AI is already part of work.
+## Key takeaways
 
-Not in some future-looking conference-slide way. In a very normal, everyday way.
+- AI is already part of everyday work, not a future topic waiting for a strategy deck.
+- The useful way to think about AI is not “replacement” first, but which tasks it removes, changes, or makes cheaper.
+- The next important skill is judgment: knowing what is correct, useful, safe, and worth doing.
+- AI can make weak thinking look polished, so ownership of the result matters more, not less.
 
-A developer asks it to explain a piece of code. A marketer uses it to draft five campaign ideas. A recruiter asks it to clean up a job description. Someone in finance uses it to summarize a long report because, honestly, no one wanted to read the whole thing.
+AI is already in the workday. Not everywhere and not perfectly, but enough that pretending it is still “coming soon” feels strange.
 
-This is no longer experimental. It is becoming routine.
+A developer uses it to understand code they did not write. Someone in marketing asks for ten rough campaign ideas. A recruiter cleans up a job description. A manager pastes meeting notes into a chat window and asks for a summary because the meeting was already too long the first time.
 
-And I think the most interesting story is not only what AI can do. It is how people reacted to it.
+This is not science fiction anymore. It is Tuesday. What interests me is not only the technology. It is the reaction around it, especially in IT.
 
-Especially in IT.
+## The fun part came first
 
-## First, we were excited
+At the beginning, AI felt like a cheat code. You asked for a function and got one. You asked it to explain an error and it gave you something better than the first five search results. You asked for a test case, a SQL query, a regex, or a release note, and it gave you a starting point before you had time to open another tab.
 
-The first phase was fun.
+Was it always right? No. Was it useful anyway? Very often, yes. That is the part people sometimes miss. A tool does not need to be perfect to change behavior. It only needs to be useful often enough that people start reaching for it by default.
 
-You typed a question and got an answer. You asked for code and it produced something that looked usable. You asked for documentation, test cases, SQL queries, release notes, regex patterns, and it gave you a starting point in seconds.
+That happened fast. Developers used it as a faster rubber duck. Product people used it to shape rough ideas. Non-technical people suddenly had a way to do small technical-looking tasks without waiting three days for someone busy.
 
-For many people, it felt like cheating.
+The excitement made sense. Then the uncomfortable question showed up: if this thing can do part of my work, what exactly is my work?
 
-In a good way.
+## Then came the nervous part
 
-Developers saw it as a faster Stack Overflow. Managers saw productivity. Product people saw faster prototyping. Non-technical people suddenly realized they could do some things without waiting for the “technical person” to become available.
+The fear was not irrational. Some people talked about it badly, but the concern itself was real.
 
-There was a lot of excitement, and some of it was justified.
+Will companies hire fewer juniors? Will managers expect more output without changing deadlines? Will mediocre content become even cheaper? Will people who know how to talk to tools start replacing people who know how the actual system works?
 
-AI really can save time. It really can remove annoying friction. It really can help people start faster.
+Some of this will happen. Some of it already is. I do not buy the clean version where AI simply “empowers everyone” and nobody loses anything. That sounds nice, but it is not how companies behave when they find a cheaper way to do a task.
 
-But after the first wave of excitement, another thought appeared.
+At the same time, “AI will replace everyone” is too lazy as an explanation. The more useful way to look at it is this: AI goes after tasks first. And a lot of tasks were not the valuable part of the job.
 
-If this tool can do part of my work, what does that mean for me?
+Writing a first draft of a status update. Turning rough notes into something readable. Explaining an error message. Creating boilerplate code. Summarizing a document nobody wanted to read. Making a slide look less embarrassing. This was work, but not always important work.
 
-## Then came the fear
+AI is good at reducing that layer. That is why it feels both helpful and threatening.
 
-This part was also predictable.
+## Now it is becoming normal
 
-Every team had some version of the same conversation.
+We are probably past the magic phase. In many teams, AI is just another tab now. People still complain about it. They still catch it making things up. They still paste its output into Slack and ask, “Does this look right?” But they use it. That is the important part.
 
-Will AI replace junior developers?  
-Will companies hire fewer people?  
-Will content become cheap and empty?  
-Will managers expect twice the output with the same salary?  
-Will people who understand prompts replace people who understand the actual work?
+Good developers are not handing over the keyboard and hoping for the best. They use AI to get unstuck, compare approaches, write boring test scaffolding, explain unfamiliar code, or generate the first version of something they know they will edit. That last part matters: they know they will edit it.
 
-Some of those fears are exaggerated. Some are not.
+Outside IT, the change may be bigger. People who never thought of themselves as technical can now produce decent drafts, clean up data, ask better questions, and automate small pieces of work. They still need judgment. They still need context. But the starting point moved.
 
-It would be dishonest to say AI changes everything but somehow changes nothing about jobs. Of course it changes jobs. It already has.
+This is the acceptance phase. Not excitement. Not panic. More like: yes, this is part of work now. Use it, but do not be stupid about it.
 
-But I do not think the simple version — “AI will replace people” — is the useful one.
+## The next skill is judgment
 
-The more useful version is this:
+The easy answer is to say the next skill is prompting. I do not think that is the main thing.
 
-AI replaces tasks before it replaces roles.
+Prompting helps, but it is not enough. If you do not understand the work, a better prompt mostly helps you get a cleaner wrong answer. The scarce skill is judgment.
 
-And many jobs are made of tasks that were never very interesting in the first place.
+Can you tell if the answer is correct? Can you see what is missing? Can you spot the security problem? Can you tell when the code fits the example but not the real system? Can you read a confident paragraph and notice that it says almost nothing?
 
-Writing the first draft of a status update. Summarizing a meeting. Creating boilerplate code. Explaining an error message. Turning rough notes into something readable. Producing the first version of a document that everyone knows will be edited anyway.
+AI creates output quickly. That is useful. But most teams do not suffer from a lack of output. They suffer from too much noise and not enough useful decisions.
 
-A lot of work was not deep work. It was just work around the work.
+More documents do not help if nobody knows which one matters. More code does not help if nobody understands the trade-offs. More ideas do not help if nobody can choose. Someone still has to know what good looks like.
 
-AI is very good at attacking that layer.
+That is where experience matters. Not because experienced people type faster. They often do not. But they know when something smells wrong. They know where the bodies are buried in the system. They remember the last time a “simple change” broke billing. They know which customer sentence sounds harmless but actually means trouble.
 
-That is why people are nervous. Not because AI is perfect, but because it is already useful enough.
+AI does not have that context unless someone brings it.
 
-## Now we are accepting it
+## The trap is looking finished too early
 
-I think we are entering the boring phase now.
+This is the part I worry about most: AI makes unfinished thinking look finished.
 
-And boring is important.
+A weak idea can come back with a clean structure. Bad code can come back with comments. A shallow strategy can come back with confident headings. It looks done enough that people may stop too early.
 
-When a technology becomes boring, it usually means it has become real.
+That is dangerous. A polished wrong answer is still wrong. It just travels faster.
 
-Nobody is impressed that you use email. Nobody asks whether the internet is “part of your workflow.” Nobody says they are doing a “cloud transformation” every time they open Google Drive.
+So the real skill is not simply using AI. Everyone will use AI. The real skill is using it without becoming lazy.
 
-AI is moving in that direction.
+Ask it for a draft, then challenge the draft. Ask for options, then choose based on context. Use it to move faster, but keep ownership of the result.
 
-Not fully. Not everywhere. Not without problems. But the direction is clear.
+If AI helps you write the report, it is still your report. If it helps you write the code, it is still your code. If it helps you make the decision, it is still your decision. The tool can assist. It cannot take responsibility.
 
-In IT, people are using AI to read unfamiliar code, generate tests, compare approaches, debug errors, write small scripts, and get unstuck. Good developers are not blindly trusting it. They are using it like a fast assistant with questionable confidence.
+## Where this leaves us
 
-That distinction matters.
+The first reaction was excitement. The second was fear. Now we are in acceptance. What comes next is maturity.
 
-Outside IT, the shift may be even bigger. People who never considered themselves technical can now produce decent first drafts, analyze simple data, automate small workflows, and ask better questions. They still need judgment, but the starting line moved.
+That means we stop treating AI like a toy, a miracle, or a monster. It is a powerful tool. It is useful. It is also wrong often enough that blind trust is a bad idea.
 
-This is the acceptance phase.
+The people who benefit most will not be the ones who copy-paste fastest. They will be the ones who understand the work well enough to use AI without being used by it.
 
-Not “AI is magic.”  
-Not “AI will destroy everything.”  
-More like: “Yes, this is part of how we work now. Let’s be smart about it.”
-
-## So what comes next?
-
-I think the next phase is judgment.
-
-Not prompting. Not automation. Not “10x productivity.”
-
-Judgment.
-
-Because AI can produce output. A lot of output. Quickly.
-
-That sounds great until you remember that most companies already produce too much noise. Too many documents. Too many messages. Too many dashboards. Too many meetings with summaries of meetings.
-
-More output is not automatically more value.
-
-Someone still has to decide what is correct, useful, safe, relevant, and worth doing.
-
-AI can help write code, but someone has to understand the system.  
-AI can summarize a contract, but someone has to know what risk looks like.  
-AI can draft a strategy, but someone has to understand the market.  
-AI can write a post, but someone has to have something real to say.
-
-This is where experienced people become more valuable, not less.
-
-Not because they type faster. AI already types faster.
-
-Because they know what good looks like.
-
-They can spot nonsense. They can see missing context. They can say, “This sounds fine, but it will fail in production.” Or, “This answer is technically correct but useless for our customer.” Or, “We should not automate this until we understand why it exists.”
-
-That kind of judgment is harder to generate.
-
-## The new skill is working with AI without becoming lazy
-
-There is a trap here.
-
-AI makes it easy to produce something that looks finished before you have actually thought about it.
-
-This is dangerous.
-
-A bad answer in a clean format is still a bad answer. A weak idea with nice structure is still weak. A piece of code that compiles but does not fit the system is still a problem.
-
-So the real skill is not just “using AI.”
-
-Everyone will use AI.
-
-The real skill is using it without outsourcing your thinking.
-
-Ask better questions. Check the output. Push back. Compare options. Bring your own context. Know when to ignore the answer. Know when to start again.
-
-For developers, this means less time writing obvious code and more time reading, reviewing, designing, testing, and understanding trade-offs.
-
-For non-technical people, it means more independence, but also more responsibility. If AI helps you create the report, you still own the report. If it helps you write the message, you still own the message.
-
-The tool can help. It cannot take responsibility.
-
-## The practical conclusion
-
-The first phase was excitement.
-
-The second was fear.
-
-The third is acceptance.
-
-The next one is maturity.
-
-Maturity means we stop treating AI like a toy, a threat, or a miracle. We treat it like a powerful tool that needs direction.
-
-The people who benefit most will not be the ones who copy-paste fastest. They will be the ones who combine AI speed with human judgment.
-
-People who understand the work.  
-People who ask better questions.  
-People who can tell the difference between a good answer and a confident answer.
-
-AI will not remove the need to think.
-
-It will punish us faster when we do not.
+That is less glamorous than most AI predictions. It is also probably closer to what will actually happen.
