@@ -1,0 +1,33 @@
+---
+layout: default
+---
+
+<nav class="top-nav">
+  <a href="{{ '/' | relative_url }}">← All articles</a>
+</nav>
+
+<article class="post">
+  <header class="post-header">
+    <p class="date">{{ page.date | date: "%B %-d, %Y" }}</p>
+    <h1>{{ page.title }}</h1>
+    {% if page.description %}
+      <p class="description">{{ page.description }}</p>
+    {% endif %}
+  </header>
+
+  <div class="content">
+    {{ content }}
+  </div>
+</article>
+
+<nav class="post-nav" aria-label="Article navigation">
+  {% if page.previous %}
+    <a href="{{ page.previous.url | relative_url }}">← {{ page.previous.title }}</a>
+  {% else %}
+    <span></span>
+  {% endif %}
+
+  {% if page.next %}
+    <a href="{{ page.next.url | relative_url }}">{{ page.next.title }} →</a>
+  {% endif %}
+</nav>
