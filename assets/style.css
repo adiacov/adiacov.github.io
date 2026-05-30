@@ -89,6 +89,16 @@ blockquote {
   border-bottom: 1px solid var(--line);
 }
 
+.site-header h1 {
+  font-family: "IBM Plex Mono", monospace;
+  font-weight: 300;
+}
+
+.site-header p {
+  font-family: "IBM Plex Mono", monospace;
+  font-weight: 300;
+}
+
 .site-header p,
 .description,
 .date {
