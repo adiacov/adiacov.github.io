@@ -79,7 +79,7 @@ Ask it for a draft, then challenge the draft. Ask for options, then choose based
 
 If AI helps you write the report, it is still your report. If it helps you write the code, it is still your code. If it helps you make the decision, it is still your decision. The tool can assist. It cannot take responsibility.
 
-## A practical conclusion
+## Conclusion
 
 The first reaction was excitement. The second was fear. Now we are in acceptance. What comes next is maturity.
 
