@@ -6,8 +6,8 @@ _site/
 .idea/
 
 
-sessions/
-
+sessions/archive/*.md
+sessions/pending/*.md
 
 # Pi project config: track checkpoint settings, ignore other local Pi files
 .pi/*
