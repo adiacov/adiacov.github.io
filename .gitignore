@@ -6,5 +6,10 @@ _site/
 .idea/
 
 
-.pi/
 sessions/
+
+
+# Pi project config: track checkpoint settings, ignore other local Pi files
+.pi/*
+!.pi/
+!.pi/checkpoint.json
