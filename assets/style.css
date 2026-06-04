@@ -4,6 +4,22 @@
   --muted: #666;
   --line: #e7e7e7;
   --bg: #fff;
+  --focus: #111;
+  --toggle-bg: #fff;
+  --toggle-border: #c9c9c9;
+  --toggle-icon: #2f3437;
+}
+
+:root[data-theme="dark"] {
+  color-scheme: dark;
+  --text: #e8e6e3;
+  --muted: #aaa6a0;
+  --line: #2b2a28;
+  --bg: #121212;
+  --focus: #e8e6e3;
+  --toggle-bg: #1b1b1b;
+  --toggle-border: #4a4742;
+  --toggle-icon: #f2d27a;
 }
 
 * {
@@ -21,6 +37,61 @@ body {
   font-family: "Fira Code", monospace;
   font-weight: 300;
   line-height: 1.75;
+  transition: background-color 160ms ease, color 160ms ease;
+}
+
+.theme-toggle {
+  position: fixed;
+  top: 18px;
+  right: 18px;
+  z-index: 1;
+  display: grid;
+  place-items: center;
+  width: 46px;
+  height: 46px;
+  padding: 0;
+  border: 1px solid var(--toggle-border);
+  border-radius: 999px;
+  background: var(--toggle-bg);
+  color: var(--toggle-icon);
+  cursor: pointer;
+  box-shadow: 0 1px 10px rgb(0 0 0 / 8%);
+  transition: border-color 160ms ease, color 160ms ease, background-color 160ms ease, transform 160ms ease;
+}
+
+.theme-toggle:hover {
+  border-color: var(--toggle-icon);
+  transform: translateY(-1px);
+}
+
+.theme-toggle:focus-visible {
+  outline: 2px solid var(--focus);
+  outline-offset: 3px;
+}
+
+.theme-toggle__icon {
+  display: block;
+  width: 22px;
+  height: 22px;
+  fill: none;
+  stroke: currentColor;
+  stroke-linecap: round;
+  stroke-linejoin: round;
+  stroke-width: 1.8;
+}
+
+.theme-toggle__icon--moon {
+  fill: currentColor;
+  stroke: none;
+}
+
+.theme-toggle__icon--sun,
+:root[data-theme="dark"] .theme-toggle__icon--moon {
+  display: none;
+}
+
+:root[data-theme="dark"] .theme-toggle__icon--sun {
+  display: block;
 }
 
 .page {
@@ -195,6 +266,14 @@ blockquote {
 
   .page {
     padding-top: 36px;
+  }
+
+  .theme-toggle {
+    position: absolute;
+    top: 12px;
+    right: 12px;
+    width: 44px;
+    height: 44px;
   }
 
   .post-nav {
