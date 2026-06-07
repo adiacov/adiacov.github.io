@@ -21,7 +21,7 @@ Before continuing meaningful work:
 5. Treat memory as curated context, not unquestionable truth. Repository state, task systems, and current project files take precedence when they disagree with memory.
 6. If durable memory is stale or contradicted by repo/task reality, update memory or project docs before continuing normal work.
 7. If the task is unclear after reconciliation, ask what we are working on.
-8. Read project scope files relevant to the current task if present, such as `BRIEF.md` or `projects/<project-name>/BRIEF.md`.
+8. Read project scope files relevant to the current task if present, such as `BRIEF.md`, specs, plans, or README files.
 9. For coding or implementation work, read and follow `ENGINEERING.md` if present.
 
 ## Collaboration style
@@ -56,65 +56,6 @@ Manual durable-memory updates remain preferred when practical.
 
 A global opt-in checkpoint extension is enabled for this repo via `.pi/checkpoint.json`.
 It automatically writes raw shutdown checkpoints to `sessions/pending/` as a safety net.
-
-## Project exploration and execution workflow
-
-Use this repository as the strategy, memory, and reflection workspace.
-Build actual tools in separate dedicated project repositories.
-
-Stay in this repository when discussing:
-
-- long-term goals and direction;
-- project discovery and idea evaluation;
-- problem framing and target users;
-- MVP scope and non-goals;
-- reflection after implementation work.
-
-Switch to a dedicated project repository when there is enough clarity on:
-
-- provisional project name;
-- problem statement;
-- intended user;
-- MVP scope;
-- first implementation task.
-
-Before switching, create a project brief in this repository, for example:
-
-```text
-projects/<project-name>/BRIEF.md
-```
-
-The brief should preserve:
-
-- why the project exists;
-- how the idea was conceived;
-- target user and usage scenario;
-- MVP scope;
-- non-goals;
-- example usage;
-- open questions;
-- current decisions;
-- next steps.
-
-Then copy or adapt the brief into the dedicated project repository's own memory/instruction files so future coding agents can continue without relying on chat history.
-
-Recommended loop:
-
-```text
-life-os:
-  explore idea
-  define project brief
-  decide MVP
-
-tool repo:
-  implement small version
-  test/demo
-  update project state
-
-life-os:
-  reflect on what was learned
-  decide whether to continue, pivot, or stop
-```
 
 ## Implementation workflow
 
