@@ -21,6 +21,7 @@
     </script>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link id="theme-favicon" rel="icon" href="{{ '/assets/favicons/favicon-light.svg' | relative_url }}" type="image/svg+xml">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Fira+Code:wght@300;400;500&family=IBM+Plex+Mono:wght@100;300&family=JetBrains+Mono:wght@200;300;400;500&display=swap">
     <link rel="stylesheet" href="{{ '/assets/style.css' | relative_url }}">
   </head>
@@ -41,31 +42,48 @@
       (function () {
         var root = document.documentElement;
         var toggle = document.querySelector('.theme-toggle');
+        var favicon = document.querySelector('#theme-favicon');
         var storageKey = 'theme';
-
-        if (!toggle) return;
+        var faviconByTheme = {
+          light: "{{ '/assets/favicons/favicon-light.svg' | relative_url }}",
+          dark: "{{ '/assets/favicons/favicon-dark.svg' | relative_url }}"
+        };
 
         function updateToggle(theme) {
+          if (!toggle) return;
+
           var isDark = theme === 'dark';
           toggle.setAttribute('aria-pressed', String(isDark));
           toggle.setAttribute('aria-label', isDark ? 'Switch to light theme' : 'Switch to dark theme');
         }
 
-        function setTheme(theme, shouldPersist) {
-          root.dataset.theme = theme;
-          updateToggle(theme);
+        function updateFavicon(theme) {
+          if (!favicon) return;
 
-          if (shouldPersist) {
-            try {
-              localStorage.setItem(storageKey, theme);
-            } catch (error) {}
-          }
+          favicon.setAttribute('href', faviconByTheme[theme] || faviconByTheme.light);
         }
 
-        updateToggle(root.dataset.theme || 'light');
-        toggle.addEventListener('click', function () {
-          setTheme(root.dataset.theme === 'dark' ? 'light' : 'dark', true);
-        });
+        function updateTheme(theme) {
+          root.dataset.theme = theme;
+          updateToggle(theme);
+          updateFavicon(theme);
+        }
+
+        function persistTheme(theme) {
+          try {
+            localStorage.setItem(storageKey, theme);
+          } catch (error) {}
+        }
+
+        updateTheme(root.dataset.theme || 'light');
+
+        if (toggle) {
+          toggle.addEventListener('click', function () {
+            var theme = root.dataset.theme === 'dark' ? 'light' : 'dark';
+            updateTheme(theme);
+            persistTheme(theme);
+          });
+        }
       })();
     </script>
   </body>
