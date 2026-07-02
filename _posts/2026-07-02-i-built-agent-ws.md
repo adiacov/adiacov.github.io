@@ -8,6 +8,8 @@ takeaways:
   - agent-ws sets up a few plain Markdown files that every agent reads, so you explain the project once.
   - The tool stays simple. It copies files and never reads them; the agent does the smart part.
   - Starting a new AI-ready project is a few commands instead of copying files by hand.
+discuss:
+  linkedin: https://www.linkedin.com/posts/alexandru-diacov_i-built-agent-ws-because-my-ai-agents-kept-share-7478509321593491456-lzsz/
 ---
 
 Every session with an AI coding agent starts the same way. The tool opens, and it knows nothing. It does not know what the project is, what we decided last week, or that the deploy script has a step you must never skip. So I explain. The next day I explain again, paste the same context, and only then get to the actual work.
