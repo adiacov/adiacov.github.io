@@ -1,0 +1,10 @@
+{% assign discuss = include.discuss %}
+{% if discuss.linkedin %}
+  <section class="discuss" aria-label="Discussion">
+    <p>
+      This blog has no comments section on purpose. If you want to react or
+      share your view, <a href="{{ discuss.linkedin }}">join the discussion on
+      LinkedIn</a>.
+    </p>
+  </section>
+{% endif %}
