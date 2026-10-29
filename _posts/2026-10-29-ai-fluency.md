@@ -8,6 +8,8 @@ takeaways:
   - Because of that, a wrong answer sounds exactly as confident as a right one.
   - Its strengths and weaknesses come from the same four properties, so you can predict where it will fail.
   - Four questions before you use an answer - Delegate, Describe, Evaluate, Verify. Verify is the one people skip.
+discuss:
+  linkedin: https://www.linkedin.com/posts/alexandru-diacov_ai-fluency-means-knowing-when-to-trust-the-share-7521471237156446208-M6E0/
 ---
 
 When I first used an AI chat, it felt like magic. I could ask about anything and get an answer that sounded clear, confident and human. Then I started using it for real work, and the problems showed up. Some answers were simply wrong. Others were invented, delivered in the same calm, expert tone as the correct ones. After enough of that I stopped using it. If I could not tell the good answers from the bad ones, every answer needed checking, and then what was the point?
