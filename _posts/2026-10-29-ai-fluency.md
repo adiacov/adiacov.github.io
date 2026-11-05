@@ -22,11 +22,11 @@ Classic software follows rules a person wrote. If your request does not match a 
 
 When you type a question, the model first splits your text into small pieces called tokens, roughly one word each, and turns every piece into a number. From that point on it works with numbers, not words. Then it does one single thing. It calculates which word is most likely to come next.
 
-![The sentence "The weather today is" with two possible next words: sunny at 95% and blue at less than 1%](/assets/images/ai-fluency/next-word.webp)
+![The sentence "The weather today is" goes into the LLM, which gives two possible next words: sunny at 95% and blue at less than 1%](/assets/images/ai-fluency/next-word.webp)
 
 Take "The weather today is ___". "Sunny" is a very likely next word. "Blue" is possible, but rare. The model does not pick "sunny" because it understands weather. It picks it because in everything it read, "sunny" followed sentences like this far more often. The chosen word is added to the sentence, and the model repeats the calculation for the next word until the answer looks complete. There is no finished paragraph stored anywhere. The answer is built one word at a time, as it goes.
 
-![The sentence is split into tokens, each turned into a number. The LLM picks the most likely next word, sunny, which is added back to the sentence before the next step](/assets/images/ai-fluency/loop.webp)
+![Step 1: the tokens "The weather today is", each turned into a number, go into the LLM, which outputs sunny. Step 2: sunny is added to the input, and the LLM outputs the next word](/assets/images/ai-fluency/loop.webp)
 
 What is the guess based on? Only two things: what the model learned in training, and what is in front of it right now. The second part is called the context. It is your question, any document you attached, and the conversation so far. The model does not know who you are, which meeting you mean, or what your team decided last week, unless that is in the context.
 
@@ -52,7 +52,7 @@ None of these are bugs that the next version will fix. They come from how the sy
 
 In daily work I do not want to think about tokens, I want a short routine. The one I use comes from Anthropic's AI Fluency course, and it is four questions.
 
-![A checklist with Delegate, Describe and Evaluate ticked, and Verify left empty as the step people skip](/assets/images/ai-fluency/four-questions.webp)
+![Four questions: Delegate, Describe and Evaluate are ticked, Verify is highlighted and left open as the step people skip](/assets/images/ai-fluency/four-questions.webp)
 
 **Delegate: who should do this, me or the AI?** Good candidates are low stakes and easy to check, like a first draft of an email, a summary of a 50-page report, or a list of ideas. You read the result and immediately see whether it is good. Bad candidates are decisions about people, money or strategy, such as a performance review, a conflict in the team or a hiring decision. The AI only knows what you told it, not the history between people or what was never written down. It also does not carry the responsibility. It will always write something convincing on these topics, and that is exactly the trap. Use it to think, but keep the decision.
 
@@ -74,7 +74,7 @@ None of the mistakes below looked like a mistake at the time.
 
 A backend engineer needs documentation for a new internal API endpoint. It is a good task for the AI, much better than formatting Markdown by hand (the security logic itself is not something to delegate). They attach the code, say the readers are the frontend team, and ask for JSON request and response examples. The result reads well, so it goes straight into the wiki. But the AI added a `timeout` parameter that does not exist in the code, listed a 404 error the endpoint never returns, and mixed up 401 and 403. All of it looked plausible, because endpoints like this often have such things. A few weeks later the frontend team builds against the documentation, and the release breaks in production. Comparing the parameters and status codes with the code would have caught all of it.
 
-![Generated API documentation with the invented timeout parameter and a 404 error the endpoint never returns circled](/assets/images/ai-fluency/verify.webp)
+![Generated API documentation for POST /orders, with the invented timeout parameter and the 404 error the endpoint never returns marked in red](/assets/images/ai-fluency/verify.webp)
 
 An HR colleague asks for a job ad for a DevOps role, based on the hiring manager's notes about AWS, Kubernetes and Terraform. The ad comes back professional and attractive, and it also lists Puppet and Ansible as required. The team does not use them. They were added because these tools often appear together online. Some strong candidates read the list, decide they do not qualify, and never apply. Nobody ever finds out who they were.
 
